@@ -1,0 +1,159 @@
+{% extends 'base.html'%}
+{% block title %}Cuts{% endblock title %}
+{% block body %}
+<div style="padding:30px;">
+  
+    <div class="alert alert-danger" role="alert">
+        Cuts are injuries to the skin that can range from minor scratches to deep lacerations. They occur when the skin is broken by a sharp object or surface, such as a knife, glass, or metal. Understanding the type and severity of a cut is crucial for effective treatment.
+      </div>
+<br><br>
+    <h4 style="text-align:center;">Types of Cuts</h4>
+
+    <div style="padding:30px;">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Abrasions</h5>
+                  <p class="card-text"><b>Description:</b> Superficial cuts that scrape away the top layer of skin. <br> <b>Example:</b> Scrapes from falls or rough surfaces.</p> <br><b>Treatment: </b>Clean with water, apply antiseptic, and cover with a sterile bandage.
+                </div>
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://media.istockphoto.com/id/944007464/vector/boy-with-bruises-on-his-leg-knee-pain-vector-illustration.jpg?s=612x612&w=0&k=20&c=TBkfPB-RlwzFnxrKpC_qhyWfrxnw3MxDtx_vxDled90=" class="card-img-top" alt="..." height=320>
+                <div class="card-body">
+                  <h5 class="card-title">Lacerations</h5>
+                  <p class="card-text"><b>Description:</b> Deep cuts that may cause tearing or splitting of the skin. <br> <b> Example: </b>Cuts from sharp objects like knives or broken glass. <br> <b>Treatment: </b> Clean the wound, apply pressure to stop bleeding, and seek medical attention if necessary.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://www.shutterstock.com/image-vector/vector-illustration-wound-steel-nail-600nw-2291186781.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Punctures wound </h5>
+                  <p class="card-text"> <b>Description:</b> Wounds caused by pointed objects penetrating the skin. <br> <b>Example:</b> Nails, needles, or animal bites. <br><br> <b>Treatment:</b>  Clean thoroughly, monitor for signs of infection, and get tetanus shots if needed. </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+          <h4 style="text-align:center;">Step-by-Step Treatment Guide</h4>
+          <h5 style="color:red;">Minor Cuts:</h5>
+        <div style="border:2px dotted grey;border-radius:20px;padding:20px;">
+            <b>Step 1: </b> Wash the cut with clean water. <br>
+            
+            <b>Step 2: </b>Apply an antiseptic solution to prevent infection. <br>
+
+            <b>Step 3:</b> Cover with a sterile bandage.<br>
+            <b>Step 4:</b> Change the bandage daily and keep an eye out for signs of infection.<br>
+            
+            <br>
+            </div>
+
+            <br><br>
+           
+            <h5 style="color:red;">Major Cuts:</h5>
+          <div style="border:2px dotted grey;border-radius:20px;padding:20px;">
+              <b>Step 1: </b> Apply pressure to stop bleeding. <br>
+              
+              <b>Step 2: </b>Clean the wound if possible, avoiding direct contact. <br>
+  
+              <b>Step 3:</b> Seek immediate medical help if the cut is deep, won’t stop bleeding, or shows signs of infection.<br>
+              <br>
+              </div>
+
+
+
+              <br><br>
+           
+            <h5 style="color:red;">Puncture Wounds:</h5>
+          <div style="border:2px dotted grey;border-radius:20px;padding:20px;">
+              <b>Step 1: </b> Clean around the wound, but avoid probing it. <br>
+              
+              <b>Step 2: </b> Apply a sterile bandage. <br>
+  
+              <b>Step 3:</b> Watch for signs of infection and consult a healthcare provider for a tetanus shot if necessary. Seek immediate medical help if the cut is deep, won’t stop bleeding, or shows signs of infection.<br>
+              <br>
+              </div>
+
+
+
+    </div>
+
+    <br><br>
+    <h4 style="text-align:center;">When to you Seek Medical Help</h4>
+   <br>
+   <div style="padding-left:100px;padding-right:100px;">
+    <div class="alert alert-primary" role="alert">
+        <b>Signs of Infection:</b> Redness, swelling, increased pain, and discharge.
+      </div>
+      <div class="alert alert-success" role="alert">
+        <b>Heavy Bleeding: </b>If bleeding doesn’t stop after applying pressure for 10 minutes.
+      </div>
+      <div class="alert alert-info" role="alert">
+        <b> Deep Cuts:</b> Cuts that expose deeper layers of tissue or muscle.
+      </div>
+      <div class="alert alert-dark" role="alert">
+        <b>Puncture Wounds:</b> Especially if they are caused by dirty or rusty objects.
+      </div>
+    </div>
+<br><br>
+    <div>
+       <h4 style="text-align:center;"> Prevention Tips </h4>
+       <br>
+       <div class="row text-center mb-5">
+        <div class="col-md-4">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <i class="fas fa-eye card-icon text-primary mb-3"></i>
+                    <h5 class="card-title">Use Protective Gear</h5>
+                    <p class="card-text">Wear gloves, safety goggles, and other protective equipment when handling sharp objects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-warning">
+                <div class="card-body">
+                    <i class="fas fa-phone-alt card-icon text-warning mb-3"></i>
+                    <h5 class="card-title">Safe Handling</h5>
+                    <p class="card-text">Be cautious with knives and glass, and use cutting tools properly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-success">
+                <div class="card-body">
+                    <i class="fas fa-hands-helping card-icon text-success mb-3"></i>
+                    <h5 class="card-title">First Aid Training</h5>
+                    <p class="card-text"> Consider taking a first aid course to be prepared for emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <br><br>
+    <div>
+        <h4 style="text-align:center;"> FAQS </h4>
+        <div style="border:2px solid blue;padding:20px;border-radius:20px;">
+            <b>How do I know if a cut needs stitches?</b><br>
+            <p>If the cut is deep, wide, or won’t stop bleeding, it may require stitches. Seek medical attention.</p> <br>
+            <b>What should I do if I notice signs of infection?</b><br>
+            <p>Consult a healthcare provider if you notice redness, swelling, or pus.</p> <br>
+            <b>Can I treat a cut at home if it's bleeding heavily?</b><br>
+            <p>Apply pressure to the wound and seek immediate medical help if the bleeding does not stop.</p> <br>
+
+        </div>
+    </div>
+
+  
+</div>
+{% endblock body %}

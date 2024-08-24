@@ -1,0 +1,123 @@
+{% extends 'base.html'%}
+{% block title %}First Aid Basics{% endblock title %}
+<body>
+    {% block body %}
+    <div style="margin-left: 20px; margin-left: 20px;">
+
+    
+
+    <h4 style="text-align:center;color:red;">Learn the essential skills to handle emergencies before professional help arrives.</h4>
+    <div class="container my-5">
+        <!-- Introduction Section -->
+        <div class="text-center mb-5">
+            <h2>Basics of First Aid</h2>
+            <p class="lead" style="color:green;">Learn the essential steps and techniques for providing effective first aid in emergencies.</p>
+        </div>
+    
+        <!-- Emergency Steps -->
+        <div class="row text-center mb-5">
+            <div class="col-md-4">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <i class="fas fa-eye card-icon text-primary mb-3"></i>
+                        <h5 class="card-title">Check</h5>
+                        <p class="card-text">Assess the situation for safety and check the condition of the injured person.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-warning">
+                    <div class="card-body">
+                        <i class="fas fa-phone-alt card-icon text-warning mb-3"></i>
+                        <h5 class="card-title">Call</h5>
+                        <p class="card-text">Call emergency services to get professional help on the way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <i class="fas fa-hands-helping card-icon text-success mb-3"></i>
+                        <h5 class="card-title">Care</h5>
+                        <p class="card-text">Provide care based on your knowledge and skills until help arrives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Common First Aid Techniques -->
+        <h3 class="mb-4">Common First Aid Techniques</h3>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-heartbeat card-icon text-danger mb-3"></i>
+                        <h5 class="card-title">CPR</h5>
+                        <p class="card-text">Cardiopulmonary resuscitation (CPR) is a life-saving technique useful in emergencies such as a heart attack or near drowning.</p>
+                        <a href="/cpr" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-band-aid card-icon text-info mb-3"></i>
+                        <h5 class="card-title">Wound Care</h5>
+                        <p class="card-text">Proper wound care helps prevent infections and promote faster healing. Learn the steps to take in case of cuts and scrapes.</p>
+                        <a href="/cuts" class="btn btn-info">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- First Aid Kit Essentials -->
+         <br>
+        <h3 class="mb-4">First Aid Kit Essentials</h3>
+        <div class="row" style="padding-left:100px;">
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;padding:30px;margin:20px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZ8qkZN8hxMq4IiURp3gbwR6yVgJw6ZFq7g&s" alt="Bandage" class="img-fluid mb-2">
+                <h6>Bandages</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;margin:20px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkGhXMOGfayCsugc9x4pvktAh94R0XcbyaA&s" alt="Scissors" class="img-fluid mb-2">
+                <h6>Scissors</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;margin:20px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-mIjN3xRCTge3v0F_6k_TqwudKAdBFE4lhQ&s" alt="Scissors" class="img-fluid mb-2">
+                <h6>Antiseptic Wipes/Antibiotic Ointment</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;margin:20px">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/335367508/XK/CD/DS/161858095/alcohol-swabs-pack-of-100.jpg" alt="Scissors" class="img-fluid mb-2">
+                <h6>Alcohol Swabs</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;margin:20px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLFUcEvPAGjTkLbTywLriF-QKEjjrBzSJhuA&s" alt="Scissors" class="img-fluid mb-2">
+                <h6>Thermometer</h6>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center mb-4" style="border:1px solid blue;margin:20px">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcEihlCuV8m1WhpND_QyJLwIhXekgRcdogQ&s" alt="Scissors" class="img-fluid mb-2">
+                <h6>Burn Ointment</h6>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    
+        <!-- When to Seek Medical Help -->
+        <div class="alert alert-danger text-center mt-5">
+            <h4 class="alert-heading">When to Seek Medical Help</h4>
+            <p>If the injury is severe, involves heavy bleeding, or if you are unsure of the condition, seek professional medical help immediately.</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+    {% endblock body %}
+</body>

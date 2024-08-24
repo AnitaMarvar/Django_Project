@@ -1,0 +1,111 @@
+{%extends 'base.html'%}
+<head>
+  <style>
+        .navbar-brand{
+            color: #0000FF !important;
+            font-weight:bold;
+            font-size:24px
+        }
+        .nav-item1{
+            color:red !important;
+
+        }
+        .card:hover {
+            transform: scale(1.05); 
+            transition: all .5s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    <div class="bg-success" style="background-color: rgba(13, 110, 253, 0.05)!important;">
+    
+      <div class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://plus.unsplash.com/premium_photo-1661341116387-95a06afb98b7?q=80&w=2070&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1661395122079-52e137916774?q=80&w=2070&h=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1681823529814-20ffe7df85f2?w=2070&h=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxmaXJzdCUyMGFpZHxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div>
+        <h1 style="text-align:center;color:green;" class="mt-4">“Be Prepared, Save Lives."</h1>
+        <h4 style="text-align:center;font-weight:100;" class="mt-1">Learn essential first aid techniques and emergency procedures to keep your loved ones safe.</h4>
+      </div>
+
+      <div style="margin-left: 20px; " >
+        <h2 class="mt-5 mb-5" style="text-align:center;color:purple;font-weight:400;">Most Frequently searched</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 120px; ">
+            <div class="col" style= " border:1px solid maroon;border-radius:10px;padding:20px;margin:10px;">
+             <a href="/cpr">
+              <div class="card" >
+                <img src="https://media.istockphoto.com/id/906536840/photo/cpr-first-aid-training-with-cpr-dummy-in-the-class.webp?b=1&s=170667a&w=0&k=20&c=O4sBaWKrNta8QThpsNDh0CsvQHEJz3MnP_46Ih1jp1U=" class="card-img-top" alt="..." with=200></a>
+                <div class="card-body">
+                  <h5 class="card-title">CPR</h5>
+                  
+                </div>
+            
+              </div>
+            
+            </div>
+            
+            <div  style= " border:1px solid maroon;border-radius:10px;padding:20px;margin:10px; margin-left:200px;" class="col">
+              <a href = "/burns">
+              <div class="card">
+                <img src="https://cureskin.com/wp-content/uploads/2020/08/skin-burns-scaled.jpeg" class="card-img-top" alt="..." height="325" ></a>
+                <div class="card-body">
+                  <h5 class="card-title">Burns</h5>
+                   
+                </div>
+              </div>
+            </div>
+            <div  style= " border:1px solid maroon;border-radius:10px;padding:20px;margin:10px;" class="col">
+              <a href="/cuts">
+              <div class="card">
+                <img src="https://cdn.wecanbeaeros.com/wp-content/uploads/cut-1024x683.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">Cuts</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <div  style= " border:1px solid maroon;border-radius:10px;padding:20px;margin:10px;margin-left:200px;" class="col">
+              <a href="/choking">
+              <div class="card">
+                <img src="https://cprcare.com/wp-content/uploads/2018/03/choking-adult-CPR.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">Choking</h5>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <div style="text-align:center" class="mt-5">
+         <a href="/basics" style="font-size:25px; font-weight:bold" class="btn btn-outline-success" >Get Started</a>
+     
+        </div>
+        <br><br><br>
+      </div>
+      {% endblock body %}
+</body>
+</html>
